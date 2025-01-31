@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "www.codepurple5827.com",
+  "homepage": "https://frc5827.github.io/codepurpleofficial/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
