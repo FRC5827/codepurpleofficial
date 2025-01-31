@@ -23,15 +23,15 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/codepurplewebsite" element={<Home />} />
-                <Route path="/codepurplewebsite/home" element={<Home />} />
-                <Route path="/codepurplewebsite/about" element={<About />} />
-                <Route path="/codepurplewebsite/subteams" element={<Subteams />} />
-                <Route path="/codepurplewebsite/leadership" element={<Leadership />} />
-                <Route path="/codepurplewebsite/sponsors" element={<Sponsors />} />
-                <Route path="/codepurplewebsite/contact" element={<Contact />} />
-                <Route path="/codepurplewebsite/contributors" element={<Contributors />} />
-                <Route path="*" element={<Unfinished />} />
+                <Route path="/codepurpleofficial" element={<Home />} />
+                <Route path="/codepurpleofficial/home" element={<Home />} />
+                <Route path="/codepurpleofficial/about" element={<About />} />
+                <Route path="/codepurpleofficial/subteams" element={<Subteams />} />
+                <Route path="/codepurpleofficial/leadership" element={<Leadership />} />
+                <Route path="/codepurpleofficial/sponsors" element={<Sponsors />} />
+                <Route path="/codepurpleofficial/contact" element={<Contact />} />
+                <Route path="/codepurpleofficial/contributors" element={<Contributors />} />
+                <Route path="/codepurpleofficial/*" element={<Unfinished />} />
             </Routes>
             <Footer />
         </Router>
