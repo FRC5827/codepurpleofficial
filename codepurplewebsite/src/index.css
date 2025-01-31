@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-book-italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-bold-italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-heavy-italic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-light-italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-medium-italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-semibold-italic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('~assets/fonts/cooper-hewitt-thin-italic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes wave2 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.wave {
+    display: inline-block;
+    animation: wave 1.5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.wave2 {
+    display: inline-block;
+    animation: wave2 1.5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes tear {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.tear {
+    display: inline-block;
+    animation: tear 2s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.gradient-scroll {
+    background: linear-gradient(90deg, #ff6ec4, #7873f5, #ff6ec4);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes textscroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.text-scroll {
+    display: inline-block;
+    animation: textscroll 10s linear infinite;
+}
+
+@keyframes float-in {
+    from {
+        transform: translateY(5%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.floatin {
+    animation: float-in 0.3s ease-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
