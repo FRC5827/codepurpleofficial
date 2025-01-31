@@ -6,7 +6,7 @@ export default defineConfig({
   assetsInclude: ['**/*.JPG'],
   base: '/codepurplewebsite/',
   build: {
-    outDir: "docs",
+    outDir: "dist",
   },
   plugins: [react()],
 })
